@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<images>
+    <image src="./IMGViewer/IMG_1890.JPG" alt="Description de l'image 1" />
+    <image src="./IMGViewer/IMG_1901.JPG" alt="Description de l'image 2" />
+    <image src="./IMGViewer/IMG_1902.JPG" alt="Description de l'image 3" />
+</images>

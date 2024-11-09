@@ -1,0 +1,512 @@
+body{
+    display: flex;
+    margin: 0;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    user-select: none;
+    -webkit-user-select: none; /* Pour Safari */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* CONTENU (en commun) */
+
+div.contenu{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+div.titre-contenu{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+div.line{
+    background-color: black;
+    height: 1px;
+}
+
+/************************/
+
+/* HEADER */
+#logo {
+    margin-top: 25px;
+    transition: all 0.4s ease;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 35px;
+    background-image: url(../img/fond\ club-2.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#logo-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Menu */
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.menu a{
+    padding: 5px;
+    border: 2px solid transparent;
+}
+
+.menu a:hover{
+    border-bottom: 2px solid black;
+}
+
+.container-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.burger-menu, #show-menu {
+    display: none;
+}
+
+#deconnexion{
+    color: #F00000;
+    border-bottom: 2px solid transparent;
+}
+
+#deconnexion:hover {
+    border-bottom: solid 2px #F00000;
+}
+
+#connecter{
+    background-color: green;
+    color: white;
+    padding-left: 15px;
+}
+
+/******************************/
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #EAEAEA;
+    border-top: 1px solid lightgray;
+    flex-wrap: wrap;
+}
+
+footer section{
+    width: 350px;
+}
+
+footer a:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+#go-to-connexion{
+    background: gray;
+    border-radius: 50px;
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: white;
+    cursor: pointer;
+}
+#go-to-connexion:hover{
+    background: none;
+    background-color: #EAEAEA;
+    color: black;
+    border: 1px solid black;
+}
+
+/******************************/
+
+/* ACCUEIL */
+#desc-club{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 40px 10px 40px;
+}
+
+#desc-club h2{
+    width: 200px;
+}
+
+#desc-club p{
+    width: 500px;
+    text-align: justify;
+}
+
+/* VIEWER */
+
+#carrousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+#image-viewer{
+    display: flex;
+    width: 450px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-viewer img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Description.php */
+
+/* Filters */
+
+.filter-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 40px;
+    margin-top: 15px;
+    padding-right: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filter-container div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-container section{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-container button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 12px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Boxes */
+
+.event-boxes{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    margin: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    width: 500px;
+    height: 400px;
+    cursor: pointer;
+}
+
+.box p{
+    margin: 0;
+    padding: 0;
+}
+
+.box-picture {
+    display: flex;
+    background-color: lightgrey;
+    border-radius: 3px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;  
+    overflow: hidden;
+}
+
+.img-article {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.description{
+    margin: 0;
+    padding: 0;
+}
+
+.title-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-container div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-container div p{
+    margin: 0;
+    padding: 0;
+}
+
+.label-type{
+    align-self: flex-start;
+    border-radius: 20px;
+    padding: 7px 10px !important;
+    border: 2px solid
+}
+
+.stick{
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+}
+
+.stick.En.cours{
+    background-color: green;
+}
+
+.stick.Terminé{
+    background-color: red;
+}
+
+.stick.Créé{
+    background-color: blue;
+}
+
+/* Onclick box */
+
+.box.expanded {
+    height: auto;
+}
+
+/** PAGE Connexion **/
+
+.body-view{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.connexion-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    background-color: white;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.connexion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    border-top-right-radius: 15px;
+    border-end-end-radius: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.logo-container{
+    background: linear-gradient(to bottom, #FF4418, #F00000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    border-radius: 15px;
+}
+
+/* Input/Label text  design */
+
+.connexion form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.connexion form section{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.connexion form section.submit-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}
+
+/*Arrow*/
+
+.submit-container button{
+    display: block;
+    padding: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background: linear-gradient(to bottom, #FF4418, #F00000);
+    border-radius: 50px;
+    border: none;
+    width: 65px;
+    cursor: pointer;
+}
+
+div.line-arrow {
+    position: relative;
+    width: 25px;
+    height: 4px;
+    margin: 6px 0;
+    background-color: white;
+    border-radius: 1px;
+    transition: all 0.5s ease;
+}
+
+div.line-arrow.high{
+    left: 15px;
+    top: 7px;
+    transform: rotate(45deg);
+    width: 12px;
+}
+
+div.line-arrow.low{
+    left: 15px;
+    bottom: 7px;
+    transform: rotate(-45deg);
+    width: 12px;
+}
+
+.submit-container button:hover .line-arrow.low{
+    left: 5px;
+    transform: rotate(-55deg);
+    bottom: 9px;
+    width: 25px;
+}
+.submit-container button:hover .line-arrow.high{
+    transition: none;
+    transform: rotate(0);
+    width: 0px
+}
+.submit-container button:hover .line-arrow.body{
+    top: 5.5px;
+    left: -0.7px;
+    width: 15px;
+    transform: rotate(45deg);
+    transition: width 0s ease, transform 0.7s ease;
+}
+
+/* Button add article */
+#add-article {
+    font-size: xx-large;
+    background-color: lightgreen;
+    padding: 0px 10px 2px 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+#add-article:hover {
+    transition: all 0.2s ease;
+    background-color: white;
+    color: lightgreen;
+}
+
+/* Mail bien envoyé */
+
+.ok {
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    align-self: center;
+    color: green;
+}
+
+.non-ok{
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    align-self: center;
+    color: red;
+}
+
+.head-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-suppression{
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+
+.form-suppression button {
+    margin: 0;
+    font-size: large;
+    padding: 0px 8px 2px 8px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    border-color: red;
+    background-color: red;
+}
+.form-suppression button:hover {
+    box-shadow: 0px 4px 4px rgba(255, 0, 0, 0.25);
+}
